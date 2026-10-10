@@ -1,0 +1,32 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+*$py.class
+.pytest_cache/
+build/
+dist/
+wheels/
+*.egg-info
+
+# Environnements virtuels
+.venv/
+env/
+venv/
+
+
+# Base de données locale & artifacts MLflow
+mlflow.db
+mlruns/
+*.sqlite
+
+# Données brutes volumineuses (suivies par DVC)
+data/raw/dataset.csv
+data/monitoring_logs/*.jsonl
+
+# Modèles volumineux locaux (si gérés via DVC ou Registry)
+# Décommentez si vous ne souhaitez pas pusher le binaire ONNX sur Git :
+# models/*.onnx
+
+# Système & OS
+.DS_Store
+Thumbs.db
